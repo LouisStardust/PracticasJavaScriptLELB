@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 9</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Practica 9</h1>
+    <form id="formularioRegistro" onsubmit="return validarFormulario()">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" onblur="validarCampo(this)" required>
+        <br>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" onblur="validarCampo(this)" required>
+        <br>
+        <br>
+
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" name="comentarios" maxlength="50" onblur="validarCampo(this)" required></textarea>
+        <br>
+        <br>
+
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" onblur="validarCampo(this)" required>
+        <br>
+        <br>
+
+        <label for="checkbox">
+            <input type="checkbox" id="checkbox" name="checkbox" required>
+            Acepto las condiciones del servicio
+        </label>
+        <br>
+        <br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <p id="resultado"></p>
+</div>
+
+<script src="pract9.js"></script>
+
+</body>
+</html>

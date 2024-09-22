@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 8</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Practica 8</h1>
+    <p>Ingrese tu salario mensual y los años de antigüedad que tienes:</p>
+    
+    <label for="salarioMensual">Salario mensual:</label>
+    <input type="number" id="salarioMensual" placeholder="Salario mensual" step="0.01">
+    <br>
+    <br>
+
+    <label for="antiguedad">Antigüedad (en años):</label>
+    <input type="number" id="antiguedad" placeholder="Antigüedad" step="0.01">
+
+    <button onclick="calcularUtilidad()">Calcular</button>
+
+    <p id="resultado"></p> 
+</div>
+
+<script src="pract8.js"></script>
+
+</body>
+</html>

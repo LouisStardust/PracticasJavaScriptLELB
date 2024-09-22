@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 4</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Practica 4</h1>
+    <p>Ingrese sus calificaciones (entre 0 y 10) para calcular tu calificación final:</p>
+    
+    <label for="parcial1">Calificación Parcial 1:</label>
+    <input type="number" id="parcial1" placeholder="Calificación 1" min="0" max="10">
+    <br>
+    <br>
+
+    <label for="parcial2">Calificación Parcial 2:</label>
+    <input type="number" id="parcial2" placeholder="Calificación 2" min="0" max="10">
+    <br>
+    <br>
+
+    <label for="parcial3">Calificación Parcial 3:</label>
+    <input type="number" id="parcial3" placeholder="Calificación 3" min="0" max="10">
+    <br>
+    <br>
+
+    <label for="examenFinal">Calificación Examen Final:</label>
+    <input type="number" id="examenFinal" placeholder="Examen Final" min="0" max="10">
+    <br>
+    <br>
+
+    <label for="trabajoFinal">Calificación Trabajo Final:</label>
+    <input type="number" id="trabajoFinal" placeholder="Trabajo Final" min="0" max="10">
+    <br>
+    <br>
+
+
+    <button onclick="calcularCalificacionFinal()">Calcular</button>
+
+    <p id="resultado"></p> 
+</div>
+
+<script src="pract4.js"></script>
+
+</body>
+</html>
